@@ -84,7 +84,7 @@ error = 0 #initialising it.
 for i,j in zip(X_test,Y_test):
     mul = np.matmul(theta,i)
     error = error + abs((mul - j)*100/j)
-error = error/40
+error = error/10
 print("Error is:",error,"%")
 
 temp = [] #It contanis predicted values of Y_test
