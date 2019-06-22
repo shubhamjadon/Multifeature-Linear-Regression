@@ -49,7 +49,7 @@ def averageCost(temp):
         total = total + (mul - j)*i[temp]
     return total/40
 
-#calculating cost for each theta
+#calculating derivative of cost function for each theta
 cost = [0,0,0,0,0,0]
 
 def updateCostMatrix():
