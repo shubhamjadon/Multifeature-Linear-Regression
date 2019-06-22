@@ -64,7 +64,7 @@ def updateTheta():
         theta[i] = theta[i] - 0.1*cost[i]
         i += 1
         
-#Here loop stops when cost0 and cost1 becomes approximately to 0
+#Here loop stops when cost array becomes approximately to 0
 #This loop is gradient descent algorithm
 while(True):
     count = 0 #it is used to check that all cost values are zeroes
@@ -75,7 +75,7 @@ while(True):
         if(i < 0.5 and i>-0.5):
             count += 1
     
-    if(count == 6):
+    if(count == 6): #6 is no of features in X_train
         break
 
 #Calculating error of predicted values.
