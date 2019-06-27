@@ -18,7 +18,8 @@ X[:, 3] = labelencoder_X.fit_transform(X[:, 3])
 #dummy encoding (making seprate columns for seprate categories )
 onehotencoder = OneHotEncoder(categorical_features = [3])
 X = onehotencoder.fit_transform(X).toarray()
-
+#Avoiding dummy variale trap
+X = X[:, 1:]
 
 #Splitting the dataset into training set and Test set
 from sklearn.model_selection import train_test_split
