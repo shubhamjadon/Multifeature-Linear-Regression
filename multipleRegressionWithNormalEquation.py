@@ -26,8 +26,6 @@ X_train,X_test,Y_train,Y_test = train_test_split(X, Y, test_size = 0.2, random_s
 
 #Multivariant linear regression using Normal equation
 
-theta = [0,0,0,0,0,0] #values of coffiecient of independent variable
-
 #Making X[i][0] = 1 so that we get genral form like h = theta0+ theta1*x + theta2*x ... after multiplying theta and X_train matrices
 i = 0
 j = 0
